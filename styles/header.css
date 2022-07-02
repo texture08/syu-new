@@ -1,0 +1,119 @@
+header {
+  padding: 10px;
+  background: #ffbd59;
+  height: 90px;
+  border: solid 4px rgb(255, 145, 0);
+  border-radius: 3px;
+}
+.header-log {
+  position: relative;
+  bottom: 25px;
+  left: 35px;
+}
+#hedaer-list ul li {
+  display: inline;
+}
+#hedaer-list ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#nav-drawer {
+  position: relative;
+}
+
+.nav-unshown {
+  display: none;
+}
+
+/*アイコンのスペース*/
+#nav-open {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+/*ハンバーガーアイコンをCSSだけで表現*/
+#nav-open,
+#nav-open span {
+  transition: all 0.4s;
+  position: relative;
+  height: 10px;
+}
+#nav-open span {
+  position: absolute;
+  height: 3px; /*線の太さ*/
+  width: 25px; /*長さ*/
+  background-color: rgb(131, 128, 128);
+  border-radius: 40px;
+}
+#nav-open span:nth-of-type(1) {
+  top: 0;
+}
+#nav-open span:nth-of-type(2) {
+  bottom: 0;
+}
+#nav-open span:nth-of-type(3) {
+  top: 15px;
+}
+
+#nav-input:checked ~ #nav-open span:nth-of-type(1) {
+  transform: translateY(10px) rotate(-45deg);
+}
+#nav-input:checked ~ #nav-open span:nth-of-type(2) {
+  left: 100%;
+  opacity: 0;
+  animation: active-menu-bar02 5s forwards;
+}
+@keyframes active-menu-bar02 {
+  100% {
+    height: 0;
+  }
+}
+#nav-input:checked ~ #nav-open span:nth-of-type(3) {
+  transform: translateY(-5px) rotate(45deg);
+}
+
+/*閉じる用の薄黒カバー*/
+#nav-close {
+  display: none; /*はじめは隠しておく*/
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.473);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+/*中身*/
+#nav-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999; /*最前面に*/
+  width: 90%; /*右側に隙間を作る（閉じるカバーを表示）*/
+  max-width: 330px; /*最大幅（調整してください）*/
+  height: 100%;
+  background: papayawhip; /*背景色*/
+  transition: all 1s ease-out; /*滑らかに表示*/
+  -webkit-transform: translateX(-105%);
+  opacity: 0;
+  transform: translateX(420%);
+}
+
+/*チェックが入ったらもろもろ表示*/
+#nav-input:checked ~ #nav-close {
+  display: block; /*カバーを表示*/
+  opacity: 0.5;
+}
+
+#nav-input:checked ~ #nav-content {
+  opacity: 1;
+  -webkit-transform: translateX(30%);
+  transform: translateZ(0%);
+  box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+}

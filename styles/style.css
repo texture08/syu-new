@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: keifont, clfont;
+  src: url(font/keifont.ttf), url(font/clfont.ttf);
+}
+
+body {
+  background: papayawhip;
+  font-family: keifont;
+}
+p {
+  margin-left: 10px;
+}
+
+#openin:checked + .open {
+  display: block;
+  padding: 45px;
+  border: dashed 4px rgb(255, 145, 0);
+}
+
+.open,
+.index input[type="checkbox"] {
+  display: none;
+}
+
+.index {
+  display: inline-block;
+  max-width: 400px;
+  border: solid 9px papayawhip;
+  border-radius: 3px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.open li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+#me {
+  width: 40vw;
+  border: solid 9px papayawhip;
+  border-radius: 3px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.rela {
+  position: relative;
+}
+
+.test {
+  margin-left: 300px;
+}
+
+.card-body div {
+  margin-top: 10px;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.card {
+  max-width: 400px;
+  border: solid 9px papayawhip;
+  border-radius: 3px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+#card-body {
+  position: absolute;
+  bottom: 1px;
+  margin-left: 10px;
+  display: inline-block;
+  display: none;
+}
+
+#card p {
+  max-width: 400px;
+  border: solid 9px papayawhip;
+  background: papayawhip;
+  border-radius: 3px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+#foo {
+  display: none;
+}
+
+#foo:checked + #card-body {
+  display: block;
+}
+
+.icon {
+  width: 10vw;
+}
+
+.img {
+  width: 50vw;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+  .icon {
+    width: 50vw;
+  }
+
+  #me {
+    width: 70vw;
+    border: solid 9px papayawhip;
+    border-radius: 3px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+}
+
+.mini {
+  font-size: 12px;
+  color: #979797;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-image: linear-gradient(#fd6767 0%, hsl(0, 89%, 76%) 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #ca5e5e;
+}
+
+.button:active {
+  /*押したとき*/
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px); /*沈むように*/
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(
+    #fa6464 0%,
+    #ffbcbc 100%
+  ); /*グラデーションを明るく*/
+}
+
+.file ul li ul {
+  list-style: none;
+  margin-top: 0.5em;
+  margin-bottom: 0.75em;
+}
+
+.file ul li ul li {
+  position: relative;
+}
+
+.file ul li ul li::before {
+  content: "";
+  position: absolute;
+  top: -0.5em;
+  left: -16px;
+  height: calc(100% + 0.75em);
+  border-left: 3px solid #a5a5a5;
+}
+
+.file ul li ul li:last-child::before {
+  height: calc(1em + 0.25em);
+}
+
+.file ul li ul li::after {
+  content: "";
+  position: absolute;
+  top: 0.75em;
+  left: -16px;
+  width: 10px;
+  border-bottom: 3px solid #a5a5a5;
+}
+
+.twitter {
+  color: #ffffff;
+  background: rgb(0, 195, 255);
+  border: solid 10px rgb(0, 195, 255);
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.title-1 {
+  border: solid 3px rgb(255, 145, 0);
+  border-radius: 8px;
+  padding-top: 0.3px;
+  font-family: clfont;
+}
+
+.title-2 {
+  border-left: solid 10px rgb(255, 145, 0);
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.mgr-10 {
+  margin-left: 10px;
+}
+
+.color1 {
+  color: #9c0000;
+}
+
+.color2 {
+  background: papayawhip;
+  border: solid 3px rgb(255, 145, 0);
+  color: #7a7878;
+  border-radius: 3px;
+}
+
+.link-1 {
+  text-decoration: none;
+  color: black;
+}
+
+.link-2 {
+  color: black;
+}
+
+.ore {
+  color: #ffffff;
+  text-shadow: 2px 2px 1px orange, -2px 2px 1px orange, 2px -2px 1px orange,
+    -2px -2px 1px orange, 1px 0px 1px orange, 0px 2px 1px orange,
+    -2px 0px 1px orange, 0px -2px 1px orange;
+}
+
+.green {
+  color: #ffffff;
+  text-shadow: 2px 2px 1px rgb(5, 255, 5), -2px 2px 1px rgb(5, 255, 5),
+    2px -2px 1px rgb(5, 255, 5), -2px -2px 1px rgb(5, 255, 5),
+    1px 0px 1px rgb(5, 255, 5), 0px 2px 1px rgb(5, 255, 5),
+    -2px 0px 1px rgb(5, 255, 5), 0px -2px 1px rgb(5, 255, 5);
+}
