@@ -12,9 +12,9 @@ document.write(`<header>
                 <div class="header-log">シューのリソース工房</div>
                 <div id="hedaer-list">
                         <ul>
-                                <li><a class="color2" href="">ホーム</a></li>
-                                <li><a class="color2" href="">ブログ</a></li>
-                                <li><a class="color2" href="">ツール</a></li>
+                                <li><a class="color2" href="https://syu-new.vercel.app/">ホーム</a></li>
+                                <li><a class="color2" href="https://syu-new.vercel.app/blog/index.html">ブログ</a></li>
+                                <li><a class="color2" href="https://syu-new.vercel.app/tools/inedx.html">ツール</a></li>
                                 <li><a class="color2" href="https://twitter.com/H2DH8K">開発者</a></li>
                                 </ul>
                 </div>
