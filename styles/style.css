@@ -13,6 +13,23 @@ p {
   margin-left: 10px;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-bottom: 20px;
+  padding: 7px 10px 7px 10px;
+  font-size: 93%;
+  line-height: 1.1em;
+  border-radius: 5px;
+  border: none;
+  background-color: papayawhip;
+  border-top: 3px solid rgb(255, 145, 0);
+  border-left: 3px solid rgb(255, 145, 0);
+  border-right: 4px solid rgb(255, 145, 0);
+  border-bottom: 4px solid rgb(255, 145, 0);
+}
+
 #openin:checked + .open {
   display: block;
   padding: 45px;
@@ -173,6 +190,15 @@ p {
   left: -16px;
   width: 10px;
   border-bottom: 3px solid #a5a5a5;
+}
+
+.text {
+  border-radius: 6px;
+  background-color: papayawhip;
+  border-top: 3px solid rgb(255, 145, 0);
+  border-left: 3px solid rgb(255, 145, 0);
+  border-right: 4px solid rgb(255, 145, 0);
+  border-bottom: 4px solid rgb(255, 145, 0);
 }
 
 .twitter {
