@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--カード-->
+    <meta name="twitter:card" content="summary" /> <!--summary_large_image or summary-->
+    <meta name="twitter:site" content="@H2DH8K" />
+    <meta property="og:url" content="https://syu-new.vercel.app/blog/index.html" />
+    <meta property="og:title" content="シューのツール&ソフト" />
+    <meta property="og:description" content="シューの日常を適当に更新します。電子工作、自作ソフト等々" />
+    <meta property="og:image" content="https://https://syu-new.vercel.app/img/syu.png" />
+    <!--アイコン-->
+    <link rel="icon" type="image/png" href="../../img/tool.png">
+	<link rel="shortcut icon" type="image/png" href="../../tool/suy.png">
+	<link rel="apple-touch-icon" href="../../tool/syu.png">
+    <title>シューのツール&ソフト</title>
+    <!--styles-->
+	<link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="../../styles/footer.css">
+    <link rel="stylesheet" href="../../styles/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+    <!--scripts-->
+    <script src="https://kit.fontawesome.com/39d9d7a0e1.js" crossorigin="anonymous"></script>
+    <script src="../../scripts/index.js"></script>
+    <script>
+        let name = "シューのツール&ソフト"
+    </script>
+</head>
+<body>
+    <script src="../../scripts/header.js"></script>
+    <p>回路電圧値<span class="mgr-10"><input type="text" id="e" class="text" placeholder="undefined"></span></p>
+    <p>LED電圧値
+        <select id="v">
+            <option value="r">赤</option>
+            <option value="y">黄色</option>
+            <option value="g">緑</option>
+            <option value="b">青</option>
+            <option value="w">白</option>
+        </select>
+    <p>電流値<span class="mgr-10"><input type="text" id="i" class="text" placeholder="undefined"></span></p>
+    <select id="type">
+        <option value="ma">mA</option>
+        <option value="a">A</option>
+    </select>
+    <p><a class="button" onclick="gen()">計算</a></p>
+    <div id="result"></div>
+    <script src="../../scripts/footer.js"></script>
+</body>
+</html>
